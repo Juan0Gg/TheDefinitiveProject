@@ -1,0 +1,64 @@
+<div class="container">
+    <h1>Form Reactivos (FormControl, Validators, FormGroup y FormBuilder)</h1>
+    <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+
+        <label for="nombre">Nombre
+            <input type="text" id="nombre" formControlName="nombre" placeholder="Ingresa tu nombre">
+            <div class="alerta" *ngIf="registroForm.get('nombre')?.invalid && registroForm.get('nombre')?.touched">
+                El nombre es obligatorio
+            </div>
+        </label>
+
+        <label for="email">Correo Electrónico
+            <input type="text" id="email" formControlName="email" placeholder="Ingresa tu correo electrónico">
+            <div class="alerta" *ngIf="registroForm.get('email')?.invalid && registroForm.get('email')?.touched">
+                <div *ngIf="registroForm.get('email')?.hasError('required')">El correo es obligatorio</div>
+                <div *ngIf="registroForm.get('email')?.hasError('email')">El correo debe ser válido</div>
+            </div>
+        </label>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento
+            <input type="text" id="fechaNacimiento" formControlName="fecha" placeholder="Ingresa tu fecha de nacimiento">
+            <div class="alerta" *ngIf="registroForm.get('fecha')?.invalid && registroForm.get('fecha')?.touched">
+                <div *ngIf="registroForm.get('fecha')?.hasError('required')">Es obligatorio</div>
+                <div *ngIf="registroForm.get('fecha')?.hasError('pattern')">El formato de fecha es YYYY-MM-DD</div>
+            </div>
+        </label>
+
+        <label for="password">Contraseña
+            <input type="password" id="password" formControlName="password" placeholder="Ingresa tu contraseña">
+            <div class="alerta" *ngIf="registroForm.get('password')?.invalid && registroForm.get('password')?.touched">
+                La contraseña es obligatoria
+            </div>
+        </label>
+
+        <label for="telefono">Teléfono
+            <input type="text" id="telefono" formControlName="telefono" placeholder="Ingresa tu teléfono">
+            <div class="alerta" *ngIf="registroForm.get('telefono')?.invalid && registroForm.get('telefono')?.touched">
+                <div *ngIf="registroForm.get('telefono')?.hasError('required')">El teléfono es obligatorio</div>
+                <div *ngIf="registroForm.get('telefono')?.hasError('pattern')">El teléfono debe ser válido</div>
+            </div>
+        </label>
+
+        <label for="direccion">Dirección
+            <input type="text" id="direccion" formControlName="direccion" placeholder="Ingresa tu dirección">
+            <div class="alerta" *ngIf="registroForm.get('direccion')?.invalid && registroForm.get('direccion')?.touched">
+                El campo de dirección es obligatorio
+            </div>
+        </label>
+
+        <span>* Campo obligatorio</span>
+        <button type="submit" [class]="{
+            'enviar': registroForm.valid,
+            'deshablitado': registroForm.invalid
+        }" [disabled]="registroForm.invalid">Registrarse</button>
+    </form>
+    
+    <ng-container *ngIf="MostrarDatos">
+        <h1>Datos verificados</h1>
+        Nombre: {{registroForm.get('nombre')?.value}} <br>
+        Correo: {{registroForm.get('email')?.value}} <br>
+        Fecha de Nacimiento: {{registroForm.get('fecha')?.value}} <br>
+        Contraseña: {{registroForm.get('password')?.value}} <br>
+    </ng-container>
+</div>

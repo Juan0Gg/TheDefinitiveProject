@@ -1,0 +1,103 @@
+.container {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #004ab3; /* Azul rey más claro */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  color: #fff; /* Texto blanco */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 1.2rem;
+  color: #e6f7ff; /* Azul pastel */
+  margin-top: 0;
+  line-height: 1.6;
+}
+/*
+MIOS
+.container {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.container h1 {
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container p {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container ul li {
+  margin-bottom: 10px;
+}
+
+.container a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container a:hover {
+  background-color: #e2e6ea;
+  transform: translateX(5px);
+}
+
+.container a:active {
+  background-color: #007bff;
+  color: white;
+  transform: translateX(2px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  .container p {
+    font-size: 1rem;
+  }
+
+  .container a {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+ */

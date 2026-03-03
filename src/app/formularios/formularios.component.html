@@ -1,0 +1,38 @@
+<div class="">
+  <h1>Forms basados en Plantillas</h1>
+  <form #registroForm="ngForm" (ngSubmit)="submitForm(registroForm)">
+    <label for="nombre"
+      >Nombre
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        [(ngModel)]="usuario.nombre"
+      />
+    </label>
+    <label for="email"
+      >Correo Electronico
+      <input type="text" name="email" id="email" [(ngModel)]="usuario.email" />
+    </label>
+    <label for="password"
+      >Contraseña:
+      <input
+        type="password"
+        name="password"
+        id="password"
+        [(ngModel)]="usuario.password"
+      />
+    </label>
+
+    <button class="enviar" type="submit">Registrarse</button>
+  </form>
+
+  <ng-container *ngIf="mostrar">
+    <h1>Demostración de ngModel</h1>
+    <p>Nombre = {{ usuario.nombre }}</p>
+
+    <p>Email = {{ usuario.email }}</p>
+
+    <p>Password = {{ usuario.password }}</p>
+  </ng-container>
+</div>

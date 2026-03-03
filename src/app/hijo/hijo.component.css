@@ -1,0 +1,54 @@
+div {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #003d99; /* Azul rey oscuro */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  color: #fff; /* Texto blanco */
+}
+
+div h1 {
+  font-size: 1.8rem;
+  color: #fff; /* Texto blanco */
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+div p {
+  font-size: 1rem;
+  color: #cce4ff; /* Azul pastel */
+  margin: 0;
+  line-height: 1.6;
+}
+
+/*
+MIOS
+div {
+  border: 1px dotted gray;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+
+  margin: 0;
+  background-color: #e5eef5;
+}
+div h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #000000;
+  font-size: 3em;
+  margin: 30px 10px;
+  padding: 0px;
+}
+
+div p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #000000;
+  font-size: 1.5em;
+  margin: 30px 10px;
+  padding: 0px;
+}
+ */

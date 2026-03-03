@@ -1,0 +1,70 @@
+/* Estilo general para el contenedor principal */
+.container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el título principal */
+.container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el subtítulo (h2) */
+.container h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos */
+.container p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo específico para el primer contenedor (detalles) */
+.container:first-of-type {
+    background-color: #f9f9f9;
+    border-left: 5px solid #007bff; /* Resalta el contenedor de detalles */
+}
+
+/* Estilo para los enlaces (si los necesitas en esta sección) */
+.container a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover sobre enlaces */
+.container a:hover {
+    color: #0056b3;
+}
+
+/* Media query para hacer el diseño más responsivo */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .container h2 {
+        font-size: 1.2rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+}

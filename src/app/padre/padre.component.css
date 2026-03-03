@@ -1,0 +1,94 @@
+div {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #004ab3; /* Azul rey más claro */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+div h1 {
+  font-size: 2rem;
+  color: #fff; /* Texto blanco */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #003d99; /* Azul rey oscuro */
+  color: #fff;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+input:focus {
+  background-color: #0050c0; /* Azul rey */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #003d99;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004ab3; /* Azul más claro */
+}
+
+/*
+MIOS
+div {
+  border: 1px dotted gray;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 15px;
+  padding-top: 0px;
+  background-color: #f5fafe;
+}
+
+div h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #000000;
+  font-size: 3em;
+  margin: 30px 10px;
+  padding: 0px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: #f5fafe;
+}
+ */

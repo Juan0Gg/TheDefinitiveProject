@@ -1,0 +1,71 @@
+/* Estilo general para los encabezados */
+h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos debajo de los encabezados */
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilo para las celdas de la tabla */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+    background-color: #28a745; /* Fondo verde para los encabezados de productos */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Estilo para las filas de la tabla */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color alternado en las filas para mejorar la legibilidad */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Resalta la fila cuando el usuario pasa el ratón por encima */
+}
+
+/* Estilo para la tabla cuando no tiene contenido */
+table.empty {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}

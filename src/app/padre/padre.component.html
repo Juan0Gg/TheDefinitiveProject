@@ -1,0 +1,8 @@
+<div>
+    <h1>Componente Padre</h1>
+    <form action="">
+        <input type="text" name="" id="" placeholder="Ingresa un nombre" #NombrePadre>
+        <button (click)="CambiarNombre(NombrePadre.value); NombrePadre.value=''">Enviar</button>
+    </form>
+    <app-hijo [nombre]="NombreDelPadre"></app-hijo>
+</div>

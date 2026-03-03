@@ -1,0 +1,16 @@
+<header class="menu">
+    <nav class="ul">
+        <li (click)="component=1">Ejemplo Manual</li>
+        <li (click)="component=2">Ejemplo CLI</li>
+        <li (click)="component=3">Propiedades</li>
+        
+    </nav>
+</header>
+<div [ngSwitch]="component">
+    <div *ngSwitchCase="1"><app-ejemplo-manual></app-ejemplo-manual></div>
+    <div *ngSwitchCase="2"><app-ejemplo-cli></app-ejemplo-cli></div>
+    <div *ngSwitchCase="3"><app-propiedades></app-propiedades></div>
+    <div *ngSwitchCase="4"></div>
+    <div *ngSwitchCase="5"></div>
+    <div *ngSwitchCase="6"></div>
+</div>
